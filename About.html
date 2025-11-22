@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Exquisite Event Planners</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 montserrat overflow-x-hidden">
+
+ <nav id="navbar" class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="images/ExquisiteLogo.png" alt="Exquisite Logo" class="w-20 h-auto" />
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <div id="nav-links" class="hidden md:flex gap-8 font-semibold text-gray-800">
+      <a href="Index.html" class="hover:text-red-500 relative group">
+        Home
+        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="About.html" class="relative group text-red-500">
+      About Us
+      <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-red-500"></span>
+      </a>
+
+
+      <a href="OurWork.html" class="hover:text-red-500 relative group">
+        Our Work
+        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="Services.html" class="">
+        Our Services
+        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="Contact.html" class="hover:text-red-500 relative group">
+        Contact Us
+        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-3xl text-gray-800 transition">
+      <i id="menuIcon" class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+
+<!-- Mobile Slide Menu (Right Sidebar) -->
+<div 
+  id="mobileMenu" 
+  class="
+    fixed top-0 right-0 h-full w-64 bg-white shadow-xl 
+    transform translate-x-full 
+    transition-transform duration-300 ease-out 
+    z-50 flex flex-col px-6 py-6 md:hidden
+  "
+>
+
+  <!-- Close (X) Icon INSIDE the menu -->
+  <button id="closeMenu" class="self-end text-3xl mb-6 text-gray-700">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <a href="Index.html" class="py-3 border-b border-gray-200 text-lg">Home</a>
+  <a href="About.html" class="py-3 text-red-500 text-lg">About Us</a>
+  <a href="OurWork.html" class="py-3 border-b border-gray-200 text-lg">Our Work</a>
+  <a href="Services.html" class="py-3 border-b border-gray-200 text-lg">Our Services</a>
+  <a href="Contact.html" class="py-3 border-b border-gray-200 text-lg">Contact Us</a>
+
+</div>
+
+<!-- Mobile Background Overlay -->
+<div 
+  id="overlay"
+  class="
+    fixed inset-0 bg-opacity-40 
+    opacity-0 hidden
+    transition-opacity duration-300 
+    z-40 pointer-events-auto
+  "
+  style="backdrop-filter: blur(2px);"
+></div>
+
+
+</nav>
+
+
+  <!-- Scroll effect -->
+  
+  <!-- About Section -->
+  <section class="py-24 mt-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      <div class="flex-1" data-aos="fade-right">
+        <img src="https://cdn.pixabay.com/photo/2018/09/05/08/05/party-3655712_640.jpg" alt="Event" class="rounded-2xl shadow-lg w-full object-cover">
+      </div>
+      <div class="flex-1 space-y-4" data-aos="fade-left">
+        <h2 class="text-4xl font-bold text-gray-800">About <span class="text-red-500">Exquisite</span></h2>
+        <p class="text-gray-600 leading-relaxed">
+          At <span class="font-semibold text-red-500">Exquisite</span>, we specialize in crafting unforgettable experiences. Whether it's a wedding, a corporate event, or a private celebration, our creative team ensures every detail reflects your vision and style.
+        </p>
+        <p class="text-gray-600">
+          Our mission is simple: to turn your ideas into flawless, stress-free events filled with joy and elegance.
+        </p>
+      </div>
+    </div>
+  </section>
+ <!-- Our Team Section -->
+  <section class="py-20 bg-linear-to-b from-white to-red-50">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold mb-12 text-gray-800">Meet Our <span class="text-red-500">Team</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dUpogET0JGyreA7PTOggP5ShdflSUSeCaA&s" alt="CEO" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-gray-800">Grace Wanjiru</h3>
+          <p class="text-red-500 font-medium text-sm mb-2">Founder & Creative Director</p>
+          <p class="text-gray-600 text-sm">Grace brings over 10 years of experience in event design and management, known for turning visions into breathtaking realities.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://cdn.pixabay.com/photo/2019/10/22/13/43/portrait-4568762_640.jpg" alt="Manager" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-gray-800">Tevin Kamau</h3>
+          <p class="text-red-500 font-medium text-sm mb-2">Event Manager</p>
+          <p class="text-gray-600 text-sm">Tevin ensures seamless coordination and perfection at every stage of event execution with creativity and precision.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://cdn.pixabay.com/photo/2019/05/21/19/48/model-4219968_640.jpg" alt="Designer" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-gray-800">Lydia Mark</h3>
+          <p class="text-red-500 font-medium text-sm mb-2">Lead Designer</p>
+          <p class="text-gray-600 text-sm">Lydia combines artistry and innovation to design event spaces that captivate and inspire every guest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Story Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">Our <span class="text-red-500">Story</span></h2>
+      <div class="relative border-l-4 border-red-400 pl-8 space-y-10 text-left">
+        <div data-aos="fade-right">
+          <h3 class="text-xl font-semibold text-gray-800">2018 — The Beginning</h3>
+          <p class="text-gray-600">Founded with a passion for design and coordination, Exquisite started as a small home-based event planning idea, focused on making special days unforgettable.</p>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="text-xl font-semibold text-gray-800">2020 — Expanding Horizons</h3>
+          <p class="text-gray-600">We began managing corporate and large-scale events, becoming known for our elegant themes and attention to detail.</p>
+        </div>
+        <div data-aos="fade-right">
+          <h3 class="text-xl font-semibold text-gray-800">2023 — Recognized Excellence</h3>
+          <p class="text-gray-600">Awarded “Event Planner of the Year,” Exquisite gained recognition for creativity and professionalism across Kenya.</p>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="text-xl font-semibold text-gray-800">2025 — Beyond Boundaries</h3>
+          <p class="text-gray-600">Today, we are a full-service event planning company trusted by individuals and brands to bring their visions to life in remarkable ways.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="py-20 bg-linear-to-b from-white to-red-50">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold mb-10 text-gray-800">Our <span class="text-red-500">Core Values</span></h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div data-aos="fade-up" class="p-6 bg-white rounded-2xl shadow-md hover:-translate-y-2 transition">
+          <i class="fa-solid fa-lightbulb text-red-500 text-3xl mb-3"></i>
+          <h3 class="font-semibold text-gray-800">Creativity</h3>
+          <p class="text-sm text-gray-600">We bring imagination and innovation to every event.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-white rounded-2xl shadow-md hover:-translate-y-2 transition">
+          <i class="fa-solid fa-handshake text-red-500 text-3xl mb-3"></i>
+          <h3 class="font-semibold text-gray-800">Reliability</h3>
+          <p class="text-sm text-gray-600">Our clients count on us to deliver excellence, always.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-white rounded-2xl shadow-md hover:-translate-y-2 transition">
+          <i class="fa-solid fa-heart text-red-500 text-3xl mb-3"></i>
+          <h3 class="font-semibold text-gray-800">Passion</h3>
+          <p class="text-sm text-gray-600">We truly love what we do — and it shows in our work.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="p-6 bg-white rounded-2xl shadow-md hover:-translate-y-2 transition">
+          <i class="fa-solid fa-eye text-red-500 text-3xl mb-3"></i>
+          <h3 class="font-semibold text-gray-800">Attention to Detail</h3>
+          <p class="text-sm text-gray-600">Every aspect is carefully planned to perfection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action -->
+  <section class="py-20 bg-linear-to-r from-red-500 to-red-600 text-center text-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Ready to Make Your Event Unforgettable?</h2>
+      <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Let’s bring your vision to life with elegance, precision, and a touch of Exquisite magic.</p>
+      <a href="Contact.html" class="bg-white text-red-600 font-bold px-8 py-3 rounded-md shadow hover:bg-gray-100 transition" data-aos="fade-up" data-aos-delay="200">
+        Book a Consultation
+      </a>
+    </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer class="bg-red-100 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-300 pb-8">
+      <div>
+        <img src="images/ExquisiteLogo.png" alt="Exquisite Logo" class="w-60 mb-4">
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Exquisite Event Planners — crafting unforgettable moments through creativity, precision, and passion. 
+          Your vision, our expertise.
+        </p>
+      </div>
+
+      <div>
+        <h1 class="font-bold text-gray-800 mb-3">Navigation</h1>
+        <nav class="flex flex-col gap-2 text-gray-700 text-sm">
+          <a href="About.html" class="hover:text-red-500 transition">About Us</a>
+          <a href="Services.html" class="hover:text-red-500 transition">Our Services</a>
+          <a href="Contact.html" class="hover:text-red-500 transition">Contact Us</a>
+          <a href="Gallery.html" class="hover:text-red-500 transition">Gallery</a>
+          <a href="News.html" class="hover:text-red-500 transition">News</a>
+        </nav>
+      </div>
+
+      <div>
+        <h1 class="font-bold text-gray-800 mb-3">Get in Touch</h1>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-red-500"></i> +254 700 123 456</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-red-500"></i> info@exquisiteevents.com</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-red-500"></i> Nairobi, Kenya</li>
+        </ul>
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-gray-700 hover:text-red-500 transition text-xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-700 hover:text-red-500 transition text-xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-700 hover:text-red-500 transition text-xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-700 hover:text-red-500 transition text-xl"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="font-bold text-gray-800 mb-3">Share Your Feedback</h1>
+        <form id="feedbackForm" class="flex flex-col gap-3">
+          <input type="text" id="feedbackInput" placeholder="Your feedback..." class="p-2 bg-gray-100 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400" required>
+          <button type="submit" class="bg-red-500 text-white rounded-md py-2 font-semibold hover:bg-red-600 transition">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center mt-8 text-sm text-gray-600">
+      <p>© 2025 Exquisite Event Planners — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const menuIcon = document.getElementById("menuIcon");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("overlay");
+    const closeMenu = document.getElementById("closeMenu");
+
+    let isOpen = false;
+
+    const toggleMenu = () => {
+      isOpen = !isOpen;
+      document.body.style.overflow = isOpen ? "hidden" : "auto";
+
+      if (isOpen) {
+        // change icon to X
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-xmark");
+
+        // slide in menu
+        mobileMenu.classList.remove("translate-x-full");
+
+        // show overlay
+        overlay.classList.remove("hidden");
+        setTimeout(() => overlay.style.opacity = "1", 10);
+
+      } else {
+        // change back to hamburger
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+
+        // slide out menu
+        mobileMenu.classList.add("translate-x-full");
+
+        // hide overlay smoothly
+        overlay.style.opacity = "0";
+        setTimeout(() => overlay.classList.add("hidden"), 300);
+      }
+    };
+
+    menuBtn.addEventListener("click", toggleMenu);
+    overlay.addEventListener("click", toggleMenu); 
+    closeMenu.addEventListener("click", toggleMenu);
+
+  </script>
+
+</body>
+</html>
