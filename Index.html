@@ -13,9 +13,20 @@
     <link rel="icon" type="image/png" href="images/ExqusiteFavicon.png">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <style>
+  /* Fix mobile navbar visibility + content under fixed navbar */
+  @media (max-width: 767px) {
+    /* Make hamburger always visible */
+    #menuBtn {
+      color: black !important; /* white – visible on dark background */
+    }
+  }
 
-</head>
-
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+  }
+</style>
 
 
 <body class="bg-white text-gray-800 montserrat overflow-x-hidden">
@@ -56,7 +67,7 @@
     </div>
 
     <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden text-black text-3xl transition">
+    <button id="menuBtn" class="md:hidden text-white text-3xl transition">
       <i id="menuIcon" class="fa-solid fa-bars"></i>
     </button>
   </div>
